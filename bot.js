@@ -135,3 +135,5 @@ client.on("message", async message => {
 });
 
 client.login(config.token);
+
+//abey yaar kuch samaj nhi aa raha
