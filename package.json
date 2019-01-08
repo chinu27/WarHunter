@@ -1,11 +1,25 @@
 {
-    "name": "gg_bot",
-    "version": "0.0.9",
-    "description": "Self help discord bot",
-    "main": "bot.js",
-    "author": "chinmay",
-    "dependencies": {
-        "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
-        "winston": "^3.1.0"
-    }
+  "name": "gg_bot",
+  "version": "0.1.1",  "description": "Self help discord bot",
+  "main": "bot.js",
+  "author": "chinmay",
+  "dependencies": {
+    "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+    "discord.js": "^11.4.2",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinu27/gg_bot.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chinu27/gg_bot/issues"
+  },
+  "homepage": "https://github.com/chinu27/gg_bot#readme"
 }
