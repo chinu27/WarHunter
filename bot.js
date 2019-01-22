@@ -67,8 +67,8 @@ client.on("message", async message => {
     message.channel.send(sayMessage);
   }
   if(command === "time") {
-    const m = Date.now();
-    message.channel.send(m);
+    var date1 = new Date(Date.now());
+    message.channel.send("current date and time: "+ date1);
   }
   
   if(command === "kick") {
