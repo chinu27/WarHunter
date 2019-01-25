@@ -39,6 +39,11 @@ client.on("message", async message => {
     const m = await message.channel.send("Ping?");
     m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
   }
+
+  if(command == "info") {
+    var kk = "Warhunter is a simple discord bot. i can do what you programme me to do.\n\n";
+    message.channel.send(kk + "made with love by\n Chinmay Sharma \na.k.a Hell_Breaker/DrOnZZeR");
+  }
   
   if(command === "say") {
     // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
