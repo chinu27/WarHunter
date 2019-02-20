@@ -29,7 +29,7 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
   
   if(command === "ping") {
-    const m = await message.channel.send("Ping?");
+    const m = await message.channel.send("Ping ping?");
     m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
   }
 
@@ -72,7 +72,6 @@ client.on("message", async message => {
     let reason = args.slice(1).join(' ');
     if(!reason) reason = "No reason provided";
     
-    // Now, time for a swift kick in the nuts!
     await member.kick(reason)
       .catch(error => message.reply(`Sorry ${message.author} I couldn't kick because of : ${error}`));
     message.reply(`${member.user.tag} has been kicked by ${message.author.tag} because: ${reason}`);
@@ -83,5 +82,3 @@ client.on("message", async message => {
 });
 
 client.login(config.token);
-
-//abey yaar kuch samaj nhi aa raha
